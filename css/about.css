@@ -1,0 +1,136 @@
+:root {
+    --html-exp: 94%;
+    --css-exp: 88%;
+    --js-exp: 92%;
+    --bs-exp: 79%;
+    --tw-exp: 91%;
+    --react-exp: 86%;
+    --sass-exp: 53%;
+    --git-exp: 72%;
+}
+
+.about {
+    font-size: var(--nm-size);
+    line-height: var(--line-height);
+}
+
+.about .container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .about .container { align-items: center; };
+}
+
+.about .intro {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.about .intro-text {
+    text-align: start;
+    width: 900px;
+}
+
+@media (max-width: 768px) {
+    .about .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about .intro-text {
+        text-align: center;
+        width: 82%;
+    }
+}
+
+.about .intro-img {
+    width: 20rem;
+}
+
+/* Skills */
+.skills {
+    width: 100%;
+    margin-top: 8px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .skills {
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        gap: 0rem;
+    }
+}
+
+.skills-title {
+    width: 64px;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .skills-title { text-align: center; };
+}
+
+.skills i {
+    margin-right: 6px;
+}
+
+.skill-title {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.skill, .exp {
+    height:6px;
+}
+
+.skill {
+    background-color: #e4e4e4;
+    margin: 20px 0px;
+    width: 100%;
+}
+
+.exp {
+    background-color: var(--primary);
+    animation-duration: 3s;
+    margin-bottom: 40px;
+}
+
+#html-exp { width: var(--html-exp); animation-name: html-grow; }
+#css-exp { width: var(--css-exp); animation-name: css-grow;}
+#js-exp { width: var(--js-exp); animation-name: js-grow;}
+#bs-exp { width: var(--bs-exp); animation-name: bs-grow;}
+#tw-exp { width: var(--tw-exp); animation-name: tw-grow;}
+#react-exp { width: var(--react-exp); animation-name: react-grow;}
+#sass-exp { width: var(--sass-exp); animation-name: sass-grow;}
+#git-exp { width: var(--git-exp); animation-name: git-grow;}
+
+@keyframes html-grow { 0% { width: 0%; } 100% { width: var(--html-exp); } }
+@keyframes css-grow { 0% { width: 0%; } 100% { width: var(--css-exp); } }
+@keyframes js-grow { 0% { width: 0%; } 100% { width: var(--js-exp); } }
+@keyframes bs-grow { 0% { width: 0%; } 100% { width: var(--bs-exp); } }
+@keyframes tw-grow { 0% { width: 0%; } 100% { width: var(--tw-exp); } }
+@keyframes react-grow { 0% { width: 0%; } 100% { width: var(--react-exp); } }
+@keyframes sass-grow { 0% { width: 0%; } 100% { width: var(--sass-exp); } }
+@keyframes git-grow { 0% { width: 0%; } 100% { width: var(--git-exp); } }
+
+.MyImage {
+    width: 512px;
+    display: block;
+    margin: auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
