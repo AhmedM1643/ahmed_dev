@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ahmed Abdelsamiea's Personal Website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="icon" href="imgs/circlelogo.png">
+    <link href="https://fonts.googleapis.com/css3?family=Cairo&display=swap" rel="stylesheet">
+    <link rel="icon" href="imgs/myimg.jpg">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/about.css">
@@ -15,32 +16,38 @@
     <title>Ahmed</title>
 </head>
 <body>
-
+    <!-- Header -->
     <header>
         <div class="container">
             <div>
-                <img class="logo" src="imgs/logo.png">
+                <img class="logo" src="imgs/logo.jpg" alt="">
                 <p class="title">Ahmed</p>
             </div>
             <nav>
                 <a href="index.html">Home</a>
-                <a href="#About">About</a>
-                <a href="#services">Services</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
+                <a href="#about">About</a>
+                <a href="#certificates">Certificates</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </nav>
-            <i class="fa-solid fa-bars menu-btn"></i>
+            <button class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <i class="fab fa-whatsapp contact-me"></i>
         </div>
     </header>
 
-
+    <!-- Landing -->
     <section class="landing">
-        <div class="container md-content-width">
+        <div class="container center md-content-width">
             <div class="info">
                 <p class="text-md">Hello, There</p>
                 <p class="text-lg">I am <span>Ahmed</span></p>
                 <p class="text-md">Web Developer</p>
-                <button class="work-btn">View Work</button>
+
+                <button class="btn work-btn">View Work</button>
                 <div class="social">
                     <i class="fa-brands fa-linkedin"></i>
                     <i class="fa-brands fa-square-behance"></i>
@@ -48,132 +55,80 @@
                 </div>
             </div>
             <div class="image">
-                <img src="imgs/logo.png" alt="">
+                <img class="my-img" src="imgs/myimg.jpg" alt="">
             </div>
         </div>
     </section>
 
-    <section class="about">
+    <!-- About-->
+    <section class="about" id="about">
         <p class="section-title">About Me</p>
         <div class="container">
             <div class="intro">
                 <p class="intro-text">Hi, my name is Ahmed, and I'm a front end developer. I'm 13 years old. I have more than two years of web development experience. I'm working with ReactJS library; I used to create my projects with ReactJs & TailwindCSS to have a better experience. But actually, I like working with plain HTML, CSS & JS bec. they are the most simple technologies in frontend.
                     I have many projects; some of them are built with ReactJS, and the others are built in vanilla Javascript. I use ReactJS, especially in the extremely complex projects, because it makes life easier in treating with DOM Elements.</p>
-                <img src="imgs/coding.jpg" class="intro-img">
+                <img class="intro-img" src="imgs/about1.jpg" alt="">
             </div>
             <p class="skills-title">Skills</p>
-            <div class="skills">
-                <div class="skills-col-1">
-                    <div class="skill-title">
-                        <p ><i class="fa-brands fa-html5"></i>HTML</p>
-                        <span>94%</span>
-                    </div>
-                    <div class="skill" ><div class="exp" id="html-exp"></div></div>  
-
-                    <div class="skill-title">
-                        <p ><i class="fa-brands fa-css3-alt"></i>CSS</p>
-                        <span>88%</span>
-                    </div>
-                    <div class="skill"><div class="exp" id="css-exp"></div></div>  
-
-                    <div class="skill-title">
-                        <p ><i class="fa-brands fa-square-js"></i>Javascript</p>
-                        <span>92%</span>
-                    </div>
-                    <div class="skill"><div class="exp" id="js-exp"></div></div> 
-
-                    <div class="skill-title">
-                        <p ><i class="fa-brands fa-bootstrap"></i>Bootstrap</p>
-                        <span>79%</span>
-                    </div>
-                    <div class="skill"><div class="exp" id="bs-exp"></div></div>  
-                </div>
-                
-                <div class="skills-cols-2">
-                    <div class="skill-title">
-                        <p ><i class="fa-brands fa-bootstrap"></i>Tailwind</p>
-                        <span>91%</span>
-                    </div>   
-                    <div class="skill" ><div class="exp" id="tw-exp"></div></div>   
-
-                    <div class="skill-title">
-                        <p ><i class="fa-brands fa-react"></i>ReactJS</p>
-                        <span>86%</span>
-                    </div>
-                    <div class="skill"><div class="exp" id="react-exp"></div></div>  
-
-                    <div class="skill-title">
-                        <p ><i class="fa-brands fa-sass"></i>Sass</p>
-                        <span>53%</span>
-                    </div>
-                    <div class="skill"><div class="exp" id="sass-exp"></div></div>  
-
-                    <div class="skill-title">
-                        <p ><i class="fa-brands fa-git-alt"></i>Git</p>
-                        <span>72%</span>
-                    </div>
-                    <div class="skill"><div class="exp" id="git-exp"></div></div>  
-                </div>
-            </div>
+            <div class="skills" id="skills"></div>
         </div>
     </section>
 
-    <section class="services" id="services">
-        <p class="section-title">My Services</p>
-        <div class="container md-content-width">
-            <div class="service">
-                <img src="imgs/services1.jpg" class="service-img">
-                <p style="text-align: center;" class="service-title">Web Development</p>
-            </div>
-            <div class="service">
-                <img src="imgs/services2.jpg" class="service-img">
-                <p style="text-align: center;" class="service-title">UI/UX Designistion</p>
-            </div>
-            <div class="service">
-                <img src="imgs/services3.jpg" class="service-img">
-                <p style="text-align: center;" class="service-title">Web Maintenance</p>
-            </div>
-            <div class="service">
-                <img src="imgs/services4.jpg" class="service-img">
-                <p style="text-align: center;" class="service-title">Logo Making</p>
-            </div>
-            <div class="service">
-                <img src="imgs/services5.jpg" class="service-img">
-                <p style="text-align: center;" class="service-title">Photo Editing</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="projects" id="projects">
-        <p class="section-title">My Projects</p>
+    <!-- Certificates-->
+    <section class="certificates" id="certificates">
+        <p class="section-title">Certificates</p>
         <div class="container">
-            <div class="project" >
-                <a href="#"><img src="imgs/projects1.jpg" class="project-img"></a>
-                <div class="info">
-                    <p class="project-title">Task List</p>
-                    <p class="project-desc">It's a task list. Its job is to make you organize your tasks easily.</p>
+            <div class="certificate">
+                <img class="certificate-img" src="imgs/certificates1.jpg" alt="">
+                <div class="certificate-info">
+                    <p class="certificate-title">HTML5 Certificate</p>
+                    <p class="certificate-desc">This certificate is given by sololearn, an online source to learn programming for free</p>
                 </div>
             </div>
-            <div class="project" >
-                <a href="#"><img src="imgs/projects2.jpg" class="project-img" ></a>
-                <div class="info">
-                    <p class="project-title">YouTube Clone</p>
-                    <p class="project-desc">It's a Clone of YouTube made in HTML, CSS and JS and it is not dynamic.</p>
-                </div>
-            </div>
-            <div class="project" >
-                <a href="#"><img src="imgs/projects3.jpg" class="project-img" ></a>
-                <div class="info">
-                    <p class="project-title">Twitter Clone</p>
-                    <p class="project-desc">It's a Clone of Twitter made in HTML, CSS and JS and it is not dynamic.</p>
+            <div class="certificate">
+                <img class="certificate-img" src="imgs/certificates2.jpg" alt="">
+                <div class="certificate-info">
+                    <p class="certificate-title">CSS3 Certificate</p>
+                    <p class="certificate-desc">This certificate is given by sololearn, an online source to learn programming for free</p>  
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="contact">
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <p class="section-title">Projects</p>
+        <div class="container center">
+            <div class="wrapper">
+                <div class="project" >
+                    <a href="#"><img class="project-img" src="imgs/projects1.jpg" alt=""></a>
+                    <div class="info">
+                        <p class="project-title">Task List</p>
+                        <p class="project-desc">It's a task list. Its job is to make you organize your tasks easily.</p>
+                    </div>
+                </div>
+                <div class="project" >
+                    <a href="#"><img class="project-img" src="imgs/projects2.jpg" alt=""></a>
+                    <div class="info">
+                        <p class="project-title">YouTube Clone</p>
+                        <p class="project-desc">It's a Clone of YouTube made in HTML, CSS and JS and it is not dynamic.</p>
+                    </div>
+                </div>
+                <div class="project" >
+                    <a href="#"><img class="project-img" src="imgs/projects3.jpg" alt=""></a>
+                    <div class="info">
+                        <p class="project-title">Twitter Clone</p>
+                        <p class="project-desc">It's a Clone of Twitter made in HTML, CSS and JS and it is not dynamic.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
         <p class="section-title">Contact Me</p>
-        <div class="container md-content-width">
+        <div class="container center">
             <form>
                 <label>Name</label>
                 <input placeholder="Enter your name..">
@@ -181,21 +136,22 @@
                 <input placeholder="Enter your Email..">
                 <label>Message</label>
                 <textarea placeholder="Enter your message.."></textarea>
-                <input type="submit" value="Send Message" class="submit"> 
+                <input type="submit" value="Send Message" class="btn submit"> 
             </form>
         </div>
     </section>
 
     <footer>
-        <p>Ahmed</p>
-        <div class="accounts-2">
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-square-behance"></i>
-            <i class="fa-brands fa-github"></i>
+        <div class="container center">
+            <div class="social">
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-square-behance"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+            <p class="copyrights">&copy;2023 Ahmed Abdelsamiea. All Rights Reserved</p>
         </div>
     </footer>
     
-    <script src="js/swiper.js"></script>
-    <script src="js/script.js" type="module"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

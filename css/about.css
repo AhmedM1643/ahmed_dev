@@ -10,7 +10,6 @@
 }
 
 .about {
-    font-size: var(--nm-size);
     line-height: var(--line-height);
 }
 
@@ -38,19 +37,19 @@
     width: 900px;
 }
 
-@media (max-width: 768px) {
+.about .intro-img {
+    width: 20rem;
+}
+
+@media (max-width: 992px) {
     .about .intro {
         flex-direction: column;
         align-items: center;
     }
-    .about .intro-text {
-        text-align: center;
-        width: 82%;
-    }
-}
 
-.about .intro-img {
-    width: 20rem;
+    .about .intro-img, .about .intro-text {
+        width: 100%;
+    }
 }
 
 /* Skills */
@@ -72,15 +71,23 @@
 }
 
 .skills-title {
-    width: 64px;
-    font-size: 20px;
+    width: 4rem;
+    font-size: 1.25rem;
     border-bottom: 1px solid black;
-    margin-top: 12px;
-    margin-bottom: 20px;
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
-    .skills-title { text-align: center; };
+    .skills-title { 
+        text-align: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .skills-title {
+        margin-top: 2rem;
+    }
 }
 
 .skills i {
@@ -91,6 +98,31 @@
     width: 100%;
     display: grid;
     grid-template-columns: auto auto;
+    position: relative;
+}
+
+.skill-title span {
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+#html-title span { left: calc(var(--html-exp) - 2px); }
+#css-title span { left: calc(var(--css-exp) - 2px); }
+#js-title span { left: calc(var(--js-exp) - 2px); }
+#bs-title span { left: calc(var(--bs-exp) - 2px); }
+#tw-title span { left: calc(var(--tw-exp) - 2px); }
+#react-title span { left: calc(var(--react-exp) - 2px); }
+#sass-title span { left: calc(var(--sass-exp) - 2px); }
+#git-title span { left: calc(var(--git-exp) - 2px); }
+
+.skill-title span::before {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4px solid;
+    border-color: var(--primary) transparent transparent transparent;
 }
 
 .skill, .exp {
@@ -126,11 +158,3 @@
 @keyframes react-grow { 0% { width: 0%; } 100% { width: var(--react-exp); } }
 @keyframes sass-grow { 0% { width: 0%; } 100% { width: var(--sass-exp); } }
 @keyframes git-grow { 0% { width: 0%; } 100% { width: var(--git-exp); } }
-
-.MyImage {
-    width: 512px;
-    display: block;
-    margin: auto;
-    margin-top: 32px;
-    margin-bottom: 32px;
-}
