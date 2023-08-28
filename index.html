@@ -7,7 +7,7 @@
     <meta name="description" content="Ahmed Abdelsamiea's Personal Website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css3?family=Cairo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css3?family=Lato&display=swap" rel="stylesheet">
     <link rel="icon" href="imgs/myimg.jpg">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/header.css">
@@ -31,13 +31,19 @@
                 <a href="#contact">Contact</a>
             </nav>
             <button class="menu-btn">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </button>
-            <i class="fab fa-whatsapp contact-me"></i>
+            <a class="contact-me" href="https://wa.me/+201091009675"><i class="fab fa-whatsapp"></i></a>
         </div>
     </header>
+
+    <ul class="sm-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
 
     <!-- Landing -->
     <section class="landing">
@@ -99,29 +105,7 @@
     <section class="projects" id="projects">
         <p class="section-title">Projects</p>
         <div class="container center">
-            <div class="wrapper">
-                <div class="project" >
-                    <a href="#"><img class="project-img" src="imgs/projects1.jpg" alt=""></a>
-                    <div class="info">
-                        <p class="project-title">Task List</p>
-                        <p class="project-desc">It's a task list. Its job is to make you organize your tasks easily.</p>
-                    </div>
-                </div>
-                <div class="project" >
-                    <a href="#"><img class="project-img" src="imgs/projects2.jpg" alt=""></a>
-                    <div class="info">
-                        <p class="project-title">YouTube Clone</p>
-                        <p class="project-desc">It's a Clone of YouTube made in HTML, CSS and JS and it is not dynamic.</p>
-                    </div>
-                </div>
-                <div class="project" >
-                    <a href="#"><img class="project-img" src="imgs/projects3.jpg" alt=""></a>
-                    <div class="info">
-                        <p class="project-title">Twitter Clone</p>
-                        <p class="project-desc">It's a Clone of Twitter made in HTML, CSS and JS and it is not dynamic.</p>
-                    </div>
-                </div>
-            </div>
+            <div class="wrapper"></div>
         </div>
 
     </section>
@@ -135,7 +119,7 @@
                 <label>Email</label>
                 <input placeholder="Enter your Email..">
                 <label>Message</label>
-                <textarea placeholder="Enter your message.."></textarea>
+                <textarea id="message-text" placeholder="Enter your message.."></textarea>
                 <input type="submit" value="Send Message" class="btn submit"> 
             </form>
         </div>
@@ -148,10 +132,12 @@
                 <i class="fa-brands fa-square-behance"></i>
                 <i class="fa-brands fa-github"></i>
             </div>
-            <p class="copyrights">&copy;2023 Ahmed Abdelsamiea. All Rights Reserved</p>
+            <p class="copyrights">&copy; 2023 Ahmed Abdelsamiea. All Rights Reserved</p>
         </div>
     </footer>
     
     <script src="js/main.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/skills.js"></script>
 </body>
 </html>

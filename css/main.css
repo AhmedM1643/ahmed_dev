@@ -62,8 +62,7 @@ textarea {
 /* Landing */
 
 .landing {
-    margin-top: 8rem;
-    margin-bottom: 4rem;
+    padding-top: 8rem;
 }
 
 .landing .container {
@@ -265,6 +264,7 @@ footer .copyrights {
 /* Utilities */
 .md-content-width { padding: 0 4rem; }
 @media (max-width: 992px) { .md-content-width { padding: 0 2rem; } }
+.flex { display: flex; }
 
 .btn {
     background-color: transparent;

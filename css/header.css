@@ -42,6 +42,28 @@ header .container div:nth-child(1) {
     display: none;
 }
 
+.sm-menu {
+    width: 100%;
+    display: none;
+    background-color: red;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+}
+
+.sm-menu li {
+    background-color: var(--primary);
+    border-bottom: 1px solid #272727;
+    width: 100%;
+    padding: 12px;
+}
+
+.sm-menu a {
+    width: 100%;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
 nav {
     display: flex;
 }
@@ -80,7 +102,7 @@ nav a {
     color: black;
 }
 
-header .contact-me {
+header .contact-me i {
     padding: 10px;
     width: 3rem;
     height: 2.2rem;
@@ -91,7 +113,7 @@ header .contact-me {
     transition: 0.3s;
 }
 
-header .contact-me:hover {
+header .contact-me:hover i {
     color: #fff;
     background-color: var(--primary);
 }
